@@ -1,0 +1,166 @@
+body{
+    background: rgba(229, 229, 229, 0.666);
+    min-height: 100vh;
+    text-align: center;
+    transition: .4s ease all;/*para que el cambio de color se mas suave*/
+}
+    .dark{
+      background-color: rgb(70, 70, 70);
+    }
+    
+h1{
+    color: rgb(135, 134, 134) ;
+    font-size: 35px;
+}
+  .dark h2{
+    color: rgb(77, 77, 77);
+  }
+
+  .dark h1{
+    color: rgb(255, 255, 255);
+  }
+
+
+.input {
+    width: 300px;
+    height: 40px;
+    margin: 2px;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+    caret-color: rgb(255, 5, 5);
+}
+.boton-agregar{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(255, 6, 48, 0.534);
+    
+}
+
+.boton-agregar:hover{
+    background-color: rgb(255, 6, 48, 0.9);
+    
+}
+
+.boton-agregar:active{
+  transform: translateY(5px);
+}
+
+.item{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border: none;
+    border-radius: 10px;
+}
+
+.inputItemEstilos{
+    width: 220px;
+    height: 40px;
+    margin: 2px;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+    border: solid rgba(183, 183, 183, 0.791);
+    box-shadow: rgba(143, 143, 143, 0.818) 0px 7px 29px 0px;
+}
+.estiloBotones{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(6, 131, 255, 0.534);
+    box-shadow: rgba(141, 141, 141, 0.818) 0px 7px 29px 0px;
+}
+.estiloBotones:hover{
+  background-color: rgba(17, 135, 253, 0.923);
+    color: white;
+
+}
+    .dark .estiloBotones{
+      background-color: rgb(103, 157, 212);
+    }
+
+    .dark .estiloBotones:hover{
+      background-color: rgb(57, 153, 249);
+      color: rgb(255, 255, 255);
+      box-shadow: rgba(141, 141, 141, 0.818) 0px 7px 29px 0px;
+    }
+    .dark .estiloBotones:active{
+      transform: translateY(5px);
+    }
+
+.contenedor{
+    display: grid;
+    justify-content: center;
+}
+.estiloContenedorTareas {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 7px;
+}
+
+/************* Dark mode *************/
+nav{
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.switch{
+  background-color: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+.switch::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0,.2);
+
+  
+}
+.switch.active{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0) ;
+}
+
+.switch.active::after{
+  right: 0;
+  left: unset;
+}
+
+.switch span{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background-color: none;
+}
+
